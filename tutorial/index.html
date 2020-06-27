@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+      defer
+    ></script>
+    <title>Myterialize Portfolio</title>
+    <style>
+      nav .badge {
+        position: relative;
+        top: 20px;
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav class="nav-wraper indigo">
+        <div class="container">
+          <a href="#" class="brand-logo">Wee Cheff !</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="" class="btn-floating indigo darken-4 z-depth-0">
+                <i class="material-icons">notifications</i>
+              </a>
+            </li>
+            <li>
+              <span class="badge white-text pink new">5</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="container">
+      <h2>Modal</h2>
+      <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
+
+      <div class="modal" id="terms">
+        <div class="modal-content">
+          <h4>Terms & Conditions</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+            explicabo quia, vitae accusamus, eos quidem ut, consectetur
+            voluptatibus nulla tempora sapiente similique. Repellendus, nam
+            quisquam perferendis quia id non assumenda.
+          </p>
+          <div class="modal-footer">
+            <a href="#" class="modal-close btn orange">Agree & Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Cards</h2>
+
+      <div class="row">
+        <div class="col s12 l6">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://raw.githubusercontent.com/iamshaunjp/materialize-playlist/lesson-13/img/curry.jpg"
+                alt=""
+              />
+              <a href="#" class="halfway-fab btn-floating pink pulse"
+                ><i class="material-icons">favorite</i></a
+              >
+            </div>
+            <div class="card-content">
+              <span class="card-title">Mango & Chickpea Curry</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laboriosam mollitia magni voluptatem maxime rerum pariatur fuga
+                atque vitae perspiciatis voluptas.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">More details</a>
+              <a href="#">View Ingredients</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l6">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://raw.githubusercontent.com/iamshaunjp/materialize-playlist/lesson-13/img/pasta.jpg"
+                alt=""
+              />
+              <a href="#" class="halfway-fab btn-floating pink pulse"
+                ><i class="material-icons">favorite</i></a
+              >
+            </div>
+            <div class="card-content">
+              <span class="card-title">Rainbow Pasta Salad</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellat quidem reiciendis ipsam distinctio minus deleniti culpa
+                obcaecati ab deserunt enim!
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">More details</a>
+              <a href="#">View Ingredients</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Collections</h2>
+      <ul class="collection with-header">
+        <li class="collection-header"><h4>Customers</h4></li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle blue">person</i>
+          <span class="title">Ryu</span>
+          <p class="grey-text">black-belt</p>
+          <a href="#" class="secondary-content"
+            ><i class="material-icons blue-text">email</i></a
+          >
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle blue">person</i>
+          <span class="title">Yoshi</span>
+          <p class="grey-text">black-belt</p>
+          <a href="#" class="secondary-content"
+            ><i class="material-icons blue-text">email</i></a
+          >
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle blue">person</i>
+          <span class="title">Crystal</span>
+          <p class="grey-text">black-belt</p>
+          <a href="#" class="secondary-content"
+            ><i class="material-icons blue-text">email</i></a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    $(document).ready(() => {
+      $('.sidenav').sidenav();
+      $('.modal').modal();
+    });
+  </script>
+</html>
